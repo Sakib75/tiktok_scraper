@@ -114,3 +114,509 @@ TypeError: list indices must be integers or slices, not str
 2024-10-05 13:33:49,777 - INFO - Uploaded 0 posts to the database for query: #solotravel
 2024-10-05 13:33:49,782 - INFO - Completed search for: #solotravel
 2024-10-05 13:33:49,782 - INFO - Sleeping for 24 seconds before next query
+2024-10-05 13:47:29,275 - INFO - Starting TikTok scraping script
+2024-10-05 13:47:30,190 - INFO - Web driver created successfully
+2024-10-05 13:47:31,087 - INFO - Navigated to TikTok homepage.
+2024-10-05 13:47:34,609 - INFO - User already logged in.
+2024-10-05 13:47:34,609 - INFO - Logged in to TikTok
+2024-10-05 13:47:34,629 - INFO - Loaded 15 queries from queries.csv
+2024-10-05 13:47:34,631 - INFO - Searching for query: #solotravel
+2024-10-05 13:47:34,632 - INFO - Starting search for query: #solotravel
+2024-10-05 13:47:35,468 - INFO - Navigated to hashtag page: #solotravel
+2024-10-05 13:47:40,657 - INFO - Scrolled to position 575
+2024-10-05 13:47:44,668 - INFO - Scrolled to position 1245
+2024-10-05 13:47:47,682 - INFO - Scrolled to position 2022
+2024-10-05 13:48:12,910 - INFO - Starting TikTok scraping script
+2024-10-05 13:48:13,679 - INFO - Web driver created successfully
+2024-10-05 13:48:18,201 - INFO - Navigated to TikTok homepage.
+2024-10-05 13:48:18,269 - INFO - User already logged in.
+2024-10-05 13:48:18,270 - INFO - Logged in to TikTok
+2024-10-05 13:48:18,288 - INFO - Loaded 15 queries from queries.csv
+2024-10-05 13:48:18,291 - INFO - Searching for query: #solotravel
+2024-10-05 13:48:18,291 - INFO - Starting search for query: #solotravel
+2024-10-05 13:48:19,089 - INFO - Navigated to hashtag page: #solotravel
+2024-10-05 13:48:22,377 - INFO - Scrolled to position 782
+2024-10-05 13:48:26,383 - INFO - Scrolled to position 1416
+2024-10-05 13:48:31,392 - INFO - Scrolled to position 2068
+2024-10-05 13:48:36,410 - INFO - Scrolled to position 2578
+2024-10-05 13:48:40,429 - INFO - Scrolled to position 3148
+2024-10-05 13:48:40,658 - INFO - Captured request ID: 19431.1662
+2024-10-05 13:48:40,661 - ERROR - An error occurred during search: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"No data found for resource with given identifier"}
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+0   chromedriver                        0x0000000100798248 cxxbridge1$str$ptr + 1907280
+1   chromedriver                        0x0000000100790730 cxxbridge1$str$ptr + 1875768
+2   chromedriver                        0x00000001003a4260 cxxbridge1$string$len + 89488
+3   chromedriver                        0x000000010038e944 cxxbridge1$string$len + 1140
+4   chromedriver                        0x000000010038d750 core::str::slice_error_fail::hbaf5d05fe3921cd2 + 61160
+5   chromedriver                        0x000000010038dc30 core::str::slice_error_fail::hbaf5d05fe3921cd2 + 62408
+6   chromedriver                        0x00000001003a7244 cxxbridge1$string$len + 101748
+7   chromedriver                        0x00000001004227d0 cxxbridge1$string$len + 606976
+8   chromedriver                        0x00000001003dd12c cxxbridge1$string$len + 322652
+9   chromedriver                        0x00000001003ddd7c cxxbridge1$string$len + 325804
+10  chromedriver                        0x00000001007604d8 cxxbridge1$str$ptr + 1678560
+11  chromedriver                        0x0000000100764e40 cxxbridge1$str$ptr + 1697352
+12  chromedriver                        0x00000001007455ec cxxbridge1$str$ptr + 1568244
+13  chromedriver                        0x0000000100765710 cxxbridge1$str$ptr + 1699608
+14  chromedriver                        0x0000000100736b90 cxxbridge1$str$ptr + 1508248
+15  chromedriver                        0x0000000100781828 cxxbridge1$str$ptr + 1814576
+16  chromedriver                        0x0000000100781980 cxxbridge1$str$ptr + 1814920
+17  chromedriver                        0x00000001007903d0 cxxbridge1$str$ptr + 1874904
+18  libsystem_pthread.dylib             0x000000019d679f94 _pthread_start + 136
+19  libsystem_pthread.dylib             0x000000019d674d34 thread_start + 8
+Traceback (most recent call last):
+  File "/Users/sakib/Documents/tiktok_scraper/framework/tiktok_bot.py", line 137, in search
+    api_response = driver.execute_cdp_cmd(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakib/Documents/tiktok_scraper/venv/lib/python3.12/site-packages/selenium/webdriver/chromium/webdriver.py", line 141, in execute_cdp_cmd
+    return self.execute("executeCdpCommand", {"cmd": cmd, "params": cmd_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakib/Documents/tiktok_scraper/venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "/Users/sakib/Documents/tiktok_scraper/venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"No data found for resource with given identifier"}
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+0   chromedriver                        0x0000000100798248 cxxbridge1$str$ptr + 1907280
+1   chromedriver                        0x0000000100790730 cxxbridge1$str$ptr + 1875768
+2   chromedriver                        0x00000001003a4260 cxxbridge1$string$len + 89488
+3   chromedriver                        0x000000010038e944 cxxbridge1$string$len + 1140
+4   chromedriver                        0x000000010038d750 core::str::slice_error_fail::hbaf5d05fe3921cd2 + 61160
+5   chromedriver                        0x000000010038dc30 core::str::slice_error_fail::hbaf5d05fe3921cd2 + 62408
+6   chromedriver                        0x00000001003a7244 cxxbridge1$string$len + 101748
+7   chromedriver                        0x00000001004227d0 cxxbridge1$string$len + 606976
+8   chromedriver                        0x00000001003dd12c cxxbridge1$string$len + 322652
+9   chromedriver                        0x00000001003ddd7c cxxbridge1$string$len + 325804
+10  chromedriver                        0x00000001007604d8 cxxbridge1$str$ptr + 1678560
+11  chromedriver                        0x0000000100764e40 cxxbridge1$str$ptr + 1697352
+12  chromedriver                        0x00000001007455ec cxxbridge1$str$ptr + 1568244
+13  chromedriver                        0x0000000100765710 cxxbridge1$str$ptr + 1699608
+14  chromedriver                        0x0000000100736b90 cxxbridge1$str$ptr + 1508248
+15  chromedriver                        0x0000000100781828 cxxbridge1$str$ptr + 1814576
+16  chromedriver                        0x0000000100781980 cxxbridge1$str$ptr + 1814920
+17  chromedriver                        0x00000001007903d0 cxxbridge1$str$ptr + 1874904
+18  libsystem_pthread.dylib             0x000000019d679f94 _pthread_start + 136
+19  libsystem_pthread.dylib             0x000000019d674d34 thread_start + 8
+
+2024-10-05 13:48:40,670 - INFO - Completed search for: #solotravel
+2024-10-05 13:48:40,670 - INFO - Sleeping for 29 seconds before next query
+2024-10-05 13:49:07,164 - INFO - Starting TikTok scraping script
+2024-10-05 13:49:14,954 - INFO - Web driver created successfully
+2024-10-05 13:49:25,986 - INFO - Navigated to TikTok homepage.
+2024-10-05 13:49:29,438 - INFO - User already logged in.
+2024-10-05 13:49:31,148 - INFO - Logged in to TikTok
+2024-10-05 13:49:32,696 - INFO - Loaded 15 queries from queries.csv
+2024-10-05 13:49:36,223 - INFO - Searching for query: #solotravel
+2024-10-05 13:49:38,782 - INFO - Starting search for query: #solotravel
+2024-10-05 13:49:40,507 - INFO - Navigated to hashtag page: #solotravel
+2024-10-05 13:49:49,991 - INFO - Scrolled to position 758
+2024-10-05 13:49:57,077 - INFO - Scrolled to position 1364
+2024-10-05 13:50:01,097 - INFO - Scrolled to position 1979
+2024-10-05 13:50:05,117 - INFO - Scrolled to position 2720
+2024-10-05 13:50:08,135 - INFO - Scrolled to position 3308
+2024-10-05 13:50:08,413 - INFO - Captured request ID: 19750.827
+2024-10-05 13:50:08,444 - INFO - Captured request ID: 19750.1037
+2024-10-05 13:50:08,456 - INFO - Captured request ID: 19750.1089
+2024-10-05 13:50:08,466 - INFO - Captured request ID: 19750.1143
+2024-10-05 13:50:08,473 - INFO - Captured request ID: 19750.1177
+2024-10-05 14:01:28,428 - ERROR - An error occurred during search: 'data'
+Traceback (most recent call last):
+  File "/Users/sakib/Documents/tiktok_scraper/framework/tiktok_bot.py", line 145, in search
+    post_data = extract_post_info(api_response)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakib/Documents/tiktok_scraper/framework/extract_info.py", line 19, in extract_post_info
+    posts = json.loads(json_data['body'])['data']
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'data'
+2024-10-05 14:01:28,437 - INFO - Completed search for: #solotravel
+2024-10-05 14:01:28,438 - INFO - Sleeping for 30 seconds before next query
+2024-10-05 14:01:33,173 - INFO - Starting TikTok scraping script
+2024-10-05 14:01:34,075 - INFO - Web driver created successfully
+2024-10-05 14:01:38,376 - INFO - Navigated to TikTok homepage.
+2024-10-05 14:01:38,668 - INFO - User already logged in.
+2024-10-05 14:01:38,668 - INFO - Logged in to TikTok
+2024-10-05 14:01:38,685 - INFO - Loaded 15 queries from queries.csv
+2024-10-05 14:01:38,690 - INFO - Searching for query: #solotravel
+2024-10-05 14:01:38,690 - INFO - Starting search for query: #solotravel
+2024-10-05 14:01:40,653 - INFO - Navigated to hashtag page: #solotravel
+2024-10-05 14:01:45,953 - INFO - Scrolled to position 654
+2024-10-05 14:02:11,721 - INFO - Scrolled to position 1289
+2024-10-05 14:02:19,936 - INFO - Scrolled to position 2040
+2024-10-05 14:02:23,957 - INFO - Scrolled to position 2786
+2024-10-05 14:02:26,990 - INFO - Scrolled to position 3417
+2024-10-05 14:02:27,291 - INFO - Captured request ID: 21228.1574
+2024-10-05 14:02:27,295 - ERROR - An error occurred during search: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"No data found for resource with given identifier"}
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+0   chromedriver                        0x0000000103118248 cxxbridge1$str$ptr + 1907280
+1   chromedriver                        0x0000000103110730 cxxbridge1$str$ptr + 1875768
+2   chromedriver                        0x0000000102d24260 cxxbridge1$string$len + 89488
+3   chromedriver                        0x0000000102d0e944 cxxbridge1$string$len + 1140
+4   chromedriver                        0x0000000102d0d750 core::str::slice_error_fail::hbaf5d05fe3921cd2 + 61160
+5   chromedriver                        0x0000000102d0dc30 core::str::slice_error_fail::hbaf5d05fe3921cd2 + 62408
+6   chromedriver                        0x0000000102d27244 cxxbridge1$string$len + 101748
+7   chromedriver                        0x0000000102da27d0 cxxbridge1$string$len + 606976
+8   chromedriver                        0x0000000102d5d12c cxxbridge1$string$len + 322652
+9   chromedriver                        0x0000000102d5dd7c cxxbridge1$string$len + 325804
+10  chromedriver                        0x00000001030e04d8 cxxbridge1$str$ptr + 1678560
+11  chromedriver                        0x00000001030e4e40 cxxbridge1$str$ptr + 1697352
+12  chromedriver                        0x00000001030c55ec cxxbridge1$str$ptr + 1568244
+13  chromedriver                        0x00000001030e5710 cxxbridge1$str$ptr + 1699608
+14  chromedriver                        0x00000001030b6b90 cxxbridge1$str$ptr + 1508248
+15  chromedriver                        0x0000000103101828 cxxbridge1$str$ptr + 1814576
+16  chromedriver                        0x0000000103101980 cxxbridge1$str$ptr + 1814920
+17  chromedriver                        0x00000001031103d0 cxxbridge1$str$ptr + 1874904
+18  libsystem_pthread.dylib             0x000000019d679f94 _pthread_start + 136
+19  libsystem_pthread.dylib             0x000000019d674d34 thread_start + 8
+Traceback (most recent call last):
+  File "/Users/sakib/Documents/tiktok_scraper/framework/tiktok_bot.py", line 137, in search
+    api_response = driver.execute_cdp_cmd(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakib/Documents/tiktok_scraper/venv/lib/python3.12/site-packages/selenium/webdriver/chromium/webdriver.py", line 141, in execute_cdp_cmd
+    return self.execute("executeCdpCommand", {"cmd": cmd, "params": cmd_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakib/Documents/tiktok_scraper/venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "/Users/sakib/Documents/tiktok_scraper/venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"No data found for resource with given identifier"}
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+0   chromedriver                        0x0000000103118248 cxxbridge1$str$ptr + 1907280
+1   chromedriver                        0x0000000103110730 cxxbridge1$str$ptr + 1875768
+2   chromedriver                        0x0000000102d24260 cxxbridge1$string$len + 89488
+3   chromedriver                        0x0000000102d0e944 cxxbridge1$string$len + 1140
+4   chromedriver                        0x0000000102d0d750 core::str::slice_error_fail::hbaf5d05fe3921cd2 + 61160
+5   chromedriver                        0x0000000102d0dc30 core::str::slice_error_fail::hbaf5d05fe3921cd2 + 62408
+6   chromedriver                        0x0000000102d27244 cxxbridge1$string$len + 101748
+7   chromedriver                        0x0000000102da27d0 cxxbridge1$string$len + 606976
+8   chromedriver                        0x0000000102d5d12c cxxbridge1$string$len + 322652
+9   chromedriver                        0x0000000102d5dd7c cxxbridge1$string$len + 325804
+10  chromedriver                        0x00000001030e04d8 cxxbridge1$str$ptr + 1678560
+11  chromedriver                        0x00000001030e4e40 cxxbridge1$str$ptr + 1697352
+12  chromedriver                        0x00000001030c55ec cxxbridge1$str$ptr + 1568244
+13  chromedriver                        0x00000001030e5710 cxxbridge1$str$ptr + 1699608
+14  chromedriver                        0x00000001030b6b90 cxxbridge1$str$ptr + 1508248
+15  chromedriver                        0x0000000103101828 cxxbridge1$str$ptr + 1814576
+16  chromedriver                        0x0000000103101980 cxxbridge1$str$ptr + 1814920
+17  chromedriver                        0x00000001031103d0 cxxbridge1$str$ptr + 1874904
+18  libsystem_pthread.dylib             0x000000019d679f94 _pthread_start + 136
+19  libsystem_pthread.dylib             0x000000019d674d34 thread_start + 8
+
+2024-10-05 14:02:27,307 - INFO - Completed search for: #solotravel
+2024-10-05 14:02:27,307 - INFO - Sleeping for 27 seconds before next query
+2024-10-05 14:02:54,316 - INFO - Searching for query: #roadtripvibes
+2024-10-05 14:02:54,318 - INFO - Starting search for query: #roadtripvibes
+2024-10-05 14:02:55,088 - INFO - Navigated to hashtag page: #roadtripvibes
+2024-10-05 14:03:00,269 - INFO - Scrolled to position 630
+2024-10-05 14:03:03,278 - INFO - Scrolled to position 1301
+2024-10-05 14:03:09,290 - INFO - Scrolled to position 1835
+2024-10-05 14:03:12,303 - INFO - Scrolled to position 2552
+2024-10-05 14:03:18,319 - INFO - Scrolled to position 3223
+2024-10-05 14:03:18,520 - INFO - Captured request ID: 21228.2461
+2024-10-05 14:03:18,554 - INFO - Captured request ID: 21228.2657
+2024-10-05 14:03:18,563 - INFO - Captured request ID: 21228.2719
+2024-10-05 14:03:18,573 - INFO - Captured request ID: 21228.2778
+2024-10-05 14:03:18,584 - INFO - Captured request ID: 21228.2823
+2024-10-05 14:03:43,728 - ERROR - An error occurred during search: 'contents'
+Traceback (most recent call last):
+  File "/Users/sakib/Documents/tiktok_scraper/framework/tiktok_bot.py", line 145, in search
+    post_data = extract_post_info(api_response)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakib/Documents/tiktok_scraper/framework/extract_info.py", line 9, in extract_post_info
+    description = post['contents'][0]['desc']
+                  ~~~~^^^^^^^^^^^^
+KeyError: 'contents'
+2024-10-05 14:03:43,746 - INFO - Completed search for: #roadtripvibes
+2024-10-05 14:03:43,746 - INFO - Sleeping for 23 seconds before next query
+2024-10-05 14:05:19,464 - INFO - Starting TikTok scraping script
+2024-10-05 14:05:20,402 - INFO - Web driver created successfully
+2024-10-05 14:05:23,949 - INFO - Navigated to TikTok homepage.
+2024-10-05 14:06:02,646 - INFO - User already logged in.
+2024-10-05 14:06:02,648 - INFO - Logged in to TikTok
+2024-10-05 14:06:02,663 - INFO - Loaded 15 queries from queries.csv
+2024-10-05 14:06:02,665 - INFO - Searching for query: #solotravel
+2024-10-05 14:06:02,666 - INFO - Starting search for query: #solotravel
+2024-10-05 14:06:08,091 - INFO - Navigated to hashtag page: #solotravel
+2024-10-05 14:06:16,378 - INFO - Scrolled to position 578
+2024-10-05 14:06:20,415 - INFO - Scrolled to position 1112
+2024-10-05 14:06:26,451 - INFO - Scrolled to position 1889
+2024-10-05 14:06:30,486 - INFO - Scrolled to position 2404
+2024-10-05 14:06:35,504 - INFO - Scrolled to position 2923
+2024-10-05 14:06:41,521 - INFO - Scrolled to position 3459
+2024-10-05 14:06:41,889 - INFO - Captured request ID: 22082.1824
+2024-10-05 14:06:41,920 - INFO - Captured request ID: 22082.2021
+2024-10-05 14:06:41,932 - INFO - Captured request ID: 22082.2090
+2024-10-05 14:06:41,943 - INFO - Captured request ID: 22082.2138
+2024-10-05 14:06:41,951 - INFO - Captured request ID: 22082.2181
+2024-10-05 14:06:41,962 - INFO - Captured request ID: 22082.2223
+2024-10-05 14:06:41,970 - INFO - Captured request ID: 22082.2271
+2024-10-05 14:07:05,212 - INFO - Completed search for: #solotravel
+2024-10-05 14:07:05,215 - INFO - Sleeping for 22 seconds before next query
+2024-10-05 14:07:27,220 - INFO - Searching for query: #roadtripvibes
+2024-10-05 14:07:27,222 - INFO - Starting search for query: #roadtripvibes
+2024-10-05 14:07:32,224 - INFO - Navigated to hashtag page: #roadtripvibes
+2024-10-05 14:07:35,250 - INFO - Scrolled to position 664
+2024-10-05 14:07:41,273 - INFO - Scrolled to position 1237
+2024-10-05 14:07:45,319 - INFO - Scrolled to position 1816
+2024-10-05 14:07:50,356 - INFO - Scrolled to position 2596
+2024-10-05 14:07:54,373 - INFO - Scrolled to position 3303
+2024-10-05 14:07:54,532 - INFO - Captured request ID: 22082.2873
+2024-10-05 14:07:54,562 - INFO - Captured request ID: 22082.3066
+2024-10-05 14:07:54,571 - INFO - Captured request ID: 22082.3119
+2024-10-05 14:07:54,581 - INFO - Captured request ID: 22082.3172
+2024-10-05 14:07:54,590 - INFO - Captured request ID: 22082.3207
+2024-10-05 14:07:54,603 - INFO - Captured request ID: 22082.3274
+2024-10-05 14:07:54,634 - INFO - Completed search for: #roadtripvibes
+2024-10-05 14:07:54,634 - INFO - Sleeping for 24 seconds before next query
+2024-10-05 14:08:18,641 - INFO - Searching for query: #travelhacks
+2024-10-05 14:08:18,643 - INFO - Starting search for query: #travelhacks
+2024-10-05 14:08:19,590 - INFO - Navigated to hashtag page: #travelhacks
+2024-10-05 14:08:25,738 - INFO - Scrolled to position 725
+2024-10-05 14:08:31,759 - INFO - Scrolled to position 1446
+2024-10-05 14:08:37,777 - INFO - Scrolled to position 2226
+2024-10-05 14:08:41,791 - INFO - Scrolled to position 2926
+2024-10-05 14:08:47,809 - INFO - Scrolled to position 3429
+2024-10-05 14:08:47,958 - INFO - Captured request ID: 22082.3688
+2024-10-05 14:08:47,992 - INFO - Captured request ID: 22082.3903
+2024-10-05 14:08:48,007 - INFO - Captured request ID: 22082.3944
+2024-10-05 14:08:48,027 - INFO - Completed search for: #travelhacks
+2024-10-05 14:08:48,028 - INFO - Sleeping for 26 seconds before next query
+2024-10-05 14:14:55,245 - INFO - Starting TikTok scraping script
+2024-10-05 14:14:56,422 - INFO - Web driver created successfully
+2024-10-05 14:15:03,632 - INFO - Navigated to TikTok homepage.
+2024-10-05 14:15:05,708 - INFO - User already logged in.
+2024-10-05 14:15:05,708 - INFO - Logged in to TikTok
+2024-10-05 14:15:05,734 - INFO - Loaded 15 queries from queries.csv
+2024-10-05 14:15:05,737 - INFO - Searching for query: #solotravel
+2024-10-05 14:15:05,737 - INFO - Starting search for query: #solotravel
+2024-10-05 14:15:07,137 - INFO - Navigated to hashtag page: #solotravel
+2024-10-05 14:15:12,366 - INFO - Scrolled to position 589
+2024-10-05 14:15:16,375 - INFO - Scrolled to position 1252
+2024-10-05 14:15:19,384 - INFO - Scrolled to position 1775
+2024-10-05 14:15:22,394 - INFO - Scrolled to position 2287
+2024-10-05 14:15:28,399 - INFO - Scrolled to position 2903
+2024-10-05 14:15:31,406 - INFO - Scrolled to position 3509
+2024-10-05 14:15:31,671 - INFO - Captured request ID: 23847.1744
+2024-10-05 14:15:31,676 - ERROR - An error occurred during search: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"No data found for resource with given identifier"}
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+0   chromedriver                        0x00000001047e0248 cxxbridge1$str$ptr + 1907280
+1   chromedriver                        0x00000001047d8730 cxxbridge1$str$ptr + 1875768
+2   chromedriver                        0x00000001043ec260 cxxbridge1$string$len + 89488
+3   chromedriver                        0x00000001043d6944 cxxbridge1$string$len + 1140
+4   chromedriver                        0x00000001043d5750 core::str::slice_error_fail::hbaf5d05fe3921cd2 + 61160
+5   chromedriver                        0x00000001043d5c30 core::str::slice_error_fail::hbaf5d05fe3921cd2 + 62408
+6   chromedriver                        0x00000001043ef244 cxxbridge1$string$len + 101748
+7   chromedriver                        0x000000010446a7d0 cxxbridge1$string$len + 606976
+8   chromedriver                        0x000000010442512c cxxbridge1$string$len + 322652
+9   chromedriver                        0x0000000104425d7c cxxbridge1$string$len + 325804
+10  chromedriver                        0x00000001047a84d8 cxxbridge1$str$ptr + 1678560
+11  chromedriver                        0x00000001047ace40 cxxbridge1$str$ptr + 1697352
+12  chromedriver                        0x000000010478d5ec cxxbridge1$str$ptr + 1568244
+13  chromedriver                        0x00000001047ad710 cxxbridge1$str$ptr + 1699608
+14  chromedriver                        0x000000010477eb90 cxxbridge1$str$ptr + 1508248
+15  chromedriver                        0x00000001047c9828 cxxbridge1$str$ptr + 1814576
+16  chromedriver                        0x00000001047c9980 cxxbridge1$str$ptr + 1814920
+17  chromedriver                        0x00000001047d83d0 cxxbridge1$str$ptr + 1874904
+18  libsystem_pthread.dylib             0x000000019d679f94 _pthread_start + 136
+19  libsystem_pthread.dylib             0x000000019d674d34 thread_start + 8
+Traceback (most recent call last):
+  File "/Users/sakib/Documents/tiktok_scraper/framework/tiktok_bot.py", line 137, in search
+    api_response = driver.execute_cdp_cmd(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakib/Documents/tiktok_scraper/venv/lib/python3.12/site-packages/selenium/webdriver/chromium/webdriver.py", line 141, in execute_cdp_cmd
+    return self.execute("executeCdpCommand", {"cmd": cmd, "params": cmd_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakib/Documents/tiktok_scraper/venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "/Users/sakib/Documents/tiktok_scraper/venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"No data found for resource with given identifier"}
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+0   chromedriver                        0x00000001047e0248 cxxbridge1$str$ptr + 1907280
+1   chromedriver                        0x00000001047d8730 cxxbridge1$str$ptr + 1875768
+2   chromedriver                        0x00000001043ec260 cxxbridge1$string$len + 89488
+3   chromedriver                        0x00000001043d6944 cxxbridge1$string$len + 1140
+4   chromedriver                        0x00000001043d5750 core::str::slice_error_fail::hbaf5d05fe3921cd2 + 61160
+5   chromedriver                        0x00000001043d5c30 core::str::slice_error_fail::hbaf5d05fe3921cd2 + 62408
+6   chromedriver                        0x00000001043ef244 cxxbridge1$string$len + 101748
+7   chromedriver                        0x000000010446a7d0 cxxbridge1$string$len + 606976
+8   chromedriver                        0x000000010442512c cxxbridge1$string$len + 322652
+9   chromedriver                        0x0000000104425d7c cxxbridge1$string$len + 325804
+10  chromedriver                        0x00000001047a84d8 cxxbridge1$str$ptr + 1678560
+11  chromedriver                        0x00000001047ace40 cxxbridge1$str$ptr + 1697352
+12  chromedriver                        0x000000010478d5ec cxxbridge1$str$ptr + 1568244
+13  chromedriver                        0x00000001047ad710 cxxbridge1$str$ptr + 1699608
+14  chromedriver                        0x000000010477eb90 cxxbridge1$str$ptr + 1508248
+15  chromedriver                        0x00000001047c9828 cxxbridge1$str$ptr + 1814576
+16  chromedriver                        0x00000001047c9980 cxxbridge1$str$ptr + 1814920
+17  chromedriver                        0x00000001047d83d0 cxxbridge1$str$ptr + 1874904
+18  libsystem_pthread.dylib             0x000000019d679f94 _pthread_start + 136
+19  libsystem_pthread.dylib             0x000000019d674d34 thread_start + 8
+
+2024-10-05 14:15:31,688 - INFO - Completed search for: #solotravel
+2024-10-05 14:15:31,688 - INFO - Sleeping for 20 seconds before next query
+2024-10-05 14:15:51,693 - INFO - Searching for query: #roadtripvibes
+2024-10-05 14:15:51,694 - INFO - Starting search for query: #roadtripvibes
+2024-10-05 14:15:52,860 - INFO - Navigated to hashtag page: #roadtripvibes
+2024-10-05 14:15:58,050 - INFO - Scrolled to position 712
+2024-10-05 14:16:02,069 - INFO - Scrolled to position 1336
+2024-10-05 14:16:07,091 - INFO - Scrolled to position 1840
+2024-10-05 14:16:12,116 - INFO - Scrolled to position 2583
+2024-10-05 14:16:18,161 - INFO - Scrolled to position 3333
+2024-10-05 14:16:18,336 - INFO - Captured request ID: 23847.2539
+2024-10-05 14:16:18,366 - INFO - Captured request ID: 23847.2746
+2024-10-05 14:16:18,376 - INFO - Captured request ID: 23847.2794
+2024-10-05 14:16:18,386 - INFO - Captured request ID: 23847.2839
+2024-10-05 14:16:18,395 - INFO - Captured request ID: 23847.2879
+2024-10-05 14:16:30,978 - INFO - Starting TikTok scraping script
+2024-10-05 14:16:32,232 - INFO - Web driver created successfully
+2024-10-05 14:16:40,363 - INFO - Navigated to TikTok homepage.
+2024-10-05 14:16:40,380 - INFO - User already logged in.
+2024-10-05 14:16:40,381 - INFO - Logged in to TikTok
+2024-10-05 14:16:40,402 - INFO - Loaded 15 queries from queries.csv
+2024-10-05 14:16:40,406 - INFO - Searching for query: #solotravel
+2024-10-05 14:16:40,406 - INFO - Starting search for query: #solotravel
+2024-10-05 14:16:41,609 - INFO - Navigated to hashtag page: #solotravel
+2024-10-05 14:16:46,769 - INFO - Scrolled to position 694
+2024-10-05 14:16:50,800 - INFO - Scrolled to position 1265
+2024-10-05 14:16:54,805 - INFO - Scrolled to position 2034
+2024-10-05 14:17:00,814 - INFO - Scrolled to position 2555
+2024-10-05 14:17:04,851 - INFO - Scrolled to position 3158
+2024-10-05 14:17:05,152 - INFO - Captured request ID: 24331.1788
+2024-10-05 14:17:05,183 - INFO - Captured request ID: 24331.2014
+2024-10-05 14:17:05,195 - INFO - Captured request ID: 24331.2068
+2024-10-05 14:17:05,206 - INFO - Captured request ID: 24331.2126
+2024-10-05 14:17:05,213 - INFO - Captured request ID: 24331.2161
+2024-10-05 14:17:40,492 - INFO - Starting TikTok scraping script
+2024-10-05 14:17:41,827 - INFO - Web driver created successfully
+2024-10-05 14:17:45,606 - INFO - Navigated to TikTok homepage.
+2024-10-05 14:17:47,634 - INFO - User already logged in.
+2024-10-05 14:17:47,635 - INFO - Logged in to TikTok
+2024-10-05 14:17:47,650 - INFO - Loaded 15 queries from queries.csv
+2024-10-05 14:17:47,651 - INFO - Searching for query: #solotravel
+2024-10-05 14:17:47,651 - INFO - Starting search for query: #solotravel
+2024-10-05 14:17:48,861 - INFO - Navigated to hashtag page: #solotravel
+2024-10-05 14:17:55,038 - INFO - Scrolled to position 546
+2024-10-05 14:18:00,053 - INFO - Scrolled to position 1183
+2024-10-05 14:18:05,073 - INFO - Scrolled to position 1704
+2024-10-05 14:18:11,110 - INFO - Scrolled to position 2348
+2024-10-05 14:18:16,138 - INFO - Scrolled to position 3127
+2024-10-05 14:18:16,407 - INFO - Captured request ID: 24696.785
+2024-10-05 14:18:16,437 - INFO - Captured request ID: 24696.976
+2024-10-05 14:18:16,450 - INFO - Captured request ID: 24696.1029
+2024-10-05 14:18:16,463 - INFO - Captured request ID: 24696.1085
+2024-10-05 14:18:16,471 - INFO - Captured request ID: 24696.1120
+2024-10-05 14:18:41,420 - INFO - Uploaded 63 posts to the database for query: #solotravel
+2024-10-05 14:19:03,547 - INFO - Completed search for: #solotravel
+2024-10-05 14:19:03,549 - INFO - Sleeping for 22 seconds before next query
+2024-10-05 14:23:32,151 - INFO - Starting TikTok scraping script
+2024-10-05 14:23:33,351 - INFO - Web driver created successfully
+2024-10-05 14:23:37,315 - INFO - Navigated to TikTok homepage.
+2024-10-05 14:24:58,496 - INFO - User already logged in.
+2024-10-05 14:24:58,496 - INFO - Logged in to TikTok
+2024-10-05 14:24:58,518 - INFO - Loaded 15 queries from queries.csv
+2024-10-05 14:24:58,523 - INFO - Searching for query: #solotravel
+2024-10-05 14:24:58,523 - INFO - Starting search for query: #solotravel
+2024-10-05 14:25:18,996 - INFO - Starting TikTok scraping script
+2024-10-05 14:25:19,970 - INFO - Web driver created successfully
+2024-10-05 14:26:50,102 - INFO - Navigated to TikTok homepage.
+2024-10-05 14:26:52,104 - INFO - User already logged in.
+2024-10-05 14:26:52,105 - INFO - Logged in to TikTok
+2024-10-05 14:26:52,121 - INFO - Loaded 15 queries from queries.csv
+2024-10-05 14:26:52,123 - INFO - Searching for query: #solotravel
+2024-10-05 14:26:52,123 - INFO - Starting search for query: #solotravel
+2024-10-05 14:27:21,784 - INFO - Navigated to hashtag page: #solotravel
+2024-10-05 14:27:26,788 - INFO - Scrolled to position 771
+2024-10-05 14:27:29,799 - INFO - Scrolled to position 1345
+2024-10-05 14:27:35,807 - INFO - Scrolled to position 2063
+2024-10-05 14:27:41,829 - INFO - Scrolled to position 2837
+2024-10-05 14:27:45,847 - INFO - Scrolled to position 3444
+2024-10-05 14:27:46,146 - INFO - Captured request ID: 26549.761
+2024-10-05 14:27:46,151 - ERROR - An error occurred during search: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"No data found for resource with given identifier"}
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+0   chromedriver                        0x0000000104df0248 cxxbridge1$str$ptr + 1907280
+1   chromedriver                        0x0000000104de8730 cxxbridge1$str$ptr + 1875768
+2   chromedriver                        0x00000001049fc260 cxxbridge1$string$len + 89488
+3   chromedriver                        0x00000001049e6944 cxxbridge1$string$len + 1140
+4   chromedriver                        0x00000001049e5750 core::str::slice_error_fail::hbaf5d05fe3921cd2 + 61160
+5   chromedriver                        0x00000001049e5c30 core::str::slice_error_fail::hbaf5d05fe3921cd2 + 62408
+6   chromedriver                        0x00000001049ff244 cxxbridge1$string$len + 101748
+7   chromedriver                        0x0000000104a7a7d0 cxxbridge1$string$len + 606976
+8   chromedriver                        0x0000000104a3512c cxxbridge1$string$len + 322652
+9   chromedriver                        0x0000000104a35d7c cxxbridge1$string$len + 325804
+10  chromedriver                        0x0000000104db84d8 cxxbridge1$str$ptr + 1678560
+11  chromedriver                        0x0000000104dbce40 cxxbridge1$str$ptr + 1697352
+12  chromedriver                        0x0000000104d9d5ec cxxbridge1$str$ptr + 1568244
+13  chromedriver                        0x0000000104dbd710 cxxbridge1$str$ptr + 1699608
+14  chromedriver                        0x0000000104d8eb90 cxxbridge1$str$ptr + 1508248
+15  chromedriver                        0x0000000104dd9828 cxxbridge1$str$ptr + 1814576
+16  chromedriver                        0x0000000104dd9980 cxxbridge1$str$ptr + 1814920
+17  chromedriver                        0x0000000104de83d0 cxxbridge1$str$ptr + 1874904
+18  libsystem_pthread.dylib             0x000000019d679f94 _pthread_start + 136
+19  libsystem_pthread.dylib             0x000000019d674d34 thread_start + 8
+Traceback (most recent call last):
+  File "/Users/sakib/Documents/tiktok_scraper/framework/tiktok_bot.py", line 139, in search
+    api_response = driver.execute_cdp_cmd(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakib/Documents/tiktok_scraper/venv/lib/python3.12/site-packages/selenium/webdriver/chromium/webdriver.py", line 141, in execute_cdp_cmd
+    return self.execute("executeCdpCommand", {"cmd": cmd, "params": cmd_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakib/Documents/tiktok_scraper/venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "/Users/sakib/Documents/tiktok_scraper/venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"No data found for resource with given identifier"}
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+0   chromedriver                        0x0000000104df0248 cxxbridge1$str$ptr + 1907280
+1   chromedriver                        0x0000000104de8730 cxxbridge1$str$ptr + 1875768
+2   chromedriver                        0x00000001049fc260 cxxbridge1$string$len + 89488
+3   chromedriver                        0x00000001049e6944 cxxbridge1$string$len + 1140
+4   chromedriver                        0x00000001049e5750 core::str::slice_error_fail::hbaf5d05fe3921cd2 + 61160
+5   chromedriver                        0x00000001049e5c30 core::str::slice_error_fail::hbaf5d05fe3921cd2 + 62408
+6   chromedriver                        0x00000001049ff244 cxxbridge1$string$len + 101748
+7   chromedriver                        0x0000000104a7a7d0 cxxbridge1$string$len + 606976
+8   chromedriver                        0x0000000104a3512c cxxbridge1$string$len + 322652
+9   chromedriver                        0x0000000104a35d7c cxxbridge1$string$len + 325804
+10  chromedriver                        0x0000000104db84d8 cxxbridge1$str$ptr + 1678560
+11  chromedriver                        0x0000000104dbce40 cxxbridge1$str$ptr + 1697352
+12  chromedriver                        0x0000000104d9d5ec cxxbridge1$str$ptr + 1568244
+13  chromedriver                        0x0000000104dbd710 cxxbridge1$str$ptr + 1699608
+14  chromedriver                        0x0000000104d8eb90 cxxbridge1$str$ptr + 1508248
+15  chromedriver                        0x0000000104dd9828 cxxbridge1$str$ptr + 1814576
+16  chromedriver                        0x0000000104dd9980 cxxbridge1$str$ptr + 1814920
+17  chromedriver                        0x0000000104de83d0 cxxbridge1$str$ptr + 1874904
+18  libsystem_pthread.dylib             0x000000019d679f94 _pthread_start + 136
+19  libsystem_pthread.dylib             0x000000019d674d34 thread_start + 8
+
+2024-10-05 14:27:46,161 - INFO - Completed search for: #solotravel
+2024-10-05 14:27:46,162 - INFO - Sleeping for 21 seconds before next query
+2024-10-05 14:28:07,167 - INFO - Searching for query: #roadtripvibes
+2024-10-05 14:28:07,168 - INFO - Starting search for query: #roadtripvibes
+2024-10-05 14:28:30,634 - INFO - Starting TikTok scraping script
+2024-10-05 14:28:31,371 - INFO - Web driver created successfully
+2024-10-05 14:28:35,214 - INFO - Navigated to TikTok homepage.
+2024-10-05 14:28:35,925 - INFO - User already logged in.
+2024-10-05 14:28:35,926 - INFO - Logged in to TikTok
+2024-10-05 14:28:35,945 - INFO - Loaded 15 queries from queries.csv
+2024-10-05 14:28:35,946 - INFO - Searching for query: #solotravel
+2024-10-05 14:28:35,946 - INFO - Starting search for query: #solotravel
+2024-10-05 14:28:51,806 - INFO - Navigated to hashtag page: #solotravel
+2024-10-05 14:28:55,815 - INFO - Scrolled to position 625
+2024-10-05 14:28:58,833 - INFO - Scrolled to position 1259
+2024-10-05 14:29:02,863 - INFO - Scrolled to position 1982
+2024-10-05 14:29:07,880 - INFO - Scrolled to position 2532
+2024-10-05 14:29:12,901 - INFO - Scrolled to position 3300
+2024-10-05 14:29:13,179 - INFO - Captured request ID: 27226.1926
+2024-10-05 14:29:13,213 - INFO - Captured request ID: 27226.2267
+2024-10-05 14:29:13,228 - INFO - Captured request ID: 27226.2321
+2024-10-05 14:29:13,243 - INFO - Captured request ID: 27226.2377
+2024-10-05 14:29:13,252 - INFO - Captured request ID: 27226.2407
+2024-10-05 14:29:43,032 - INFO - Uploaded 63 posts to the database for query: #solotravel
+2024-10-05 14:29:43,033 - INFO - Completed search for: #solotravel
+2024-10-05 14:29:43,034 - INFO - Sleeping for 29 seconds before next query

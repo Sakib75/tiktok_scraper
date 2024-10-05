@@ -5,7 +5,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import os
 from selenium.webdriver import DesiredCapabilities
-
+from time import sleep
+from random import randint
 
 def get_els(driver, xpath, time=15):
     try:
@@ -55,3 +56,10 @@ def create_driver():
         "ferozprofile",
     )
     return create_chrome_profile(chrome_profile_path)
+
+def random_scrolling(driver, scroll_total, max, min):
+    current_scroll = 0
+    while current_scroll < scroll_total:
+        current_scroll += randint(max, min)
+        driver.execute_script(f"window.scrollTo(0, {current_scroll})")
+        sleep(randint(3, 6))

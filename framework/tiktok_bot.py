@@ -1,6 +1,6 @@
 import logging
 from selenium.webdriver import Chrome
-from framework.driver_funcs import create_driver, get_els
+from framework.driver_funcs import create_driver, get_els, random_scrolling
 import sys
 import json
 from framework.extract_info import extract_post_info
@@ -98,6 +98,8 @@ def search(driver: Chrome, search_text: str, scroll_total: int):
         logger.info(f"Starting search for query: {search_text}")
         
         if search_text.startswith("#"):
+            # Do some random scrolling 
+            random_scrolling(driver, 400, 100,200)
             driver.get(f"https://www.tiktok.com/tag/{search_text[1:]}")
             logger.info(f"Navigated to hashtag page: {search_text}")
         else:
@@ -125,6 +127,28 @@ def search(driver: Chrome, search_text: str, scroll_total: int):
         events = [process_browser_log_entry(entry) for entry in browser_log]
 
         if search_text.startswith("#"):
+            api_responses = []
+            for event in events:
+                if "response" in event["params"]:
+                    if (
+                        "https://www.tiktok.com/api/challenge/item_list/?WebIdLastTime" 
+                        in event.get("params", {}).get("response", {}).get("url", "")
+                    ):
+                        request_id = event["params"]["requestId"]
+                        logger.info(f"Captured request ID: {request_id}")
+                        try:
+                            api_response = driver.execute_cdp_cmd(
+                                "Network.getResponseBody",
+                                {"requestId": str(request_id)},
+                            )
+                            api_responses.append(api_response)
+                        except:
+                            logger.info("No response found")
+
+            all_post_data = []
+            for api_response in api_responses:
+                post_data = extract_post_info(api_response)
+                all_post_data.append(post_data)
             
         if not search_text.startswith("#"):
             api_responses = []
@@ -136,25 +160,28 @@ def search(driver: Chrome, search_text: str, scroll_total: int):
                     ):
                         request_id = event["params"]["requestId"]
                         logger.info(f"Captured request ID: {request_id}")
-                        api_response = driver.execute_cdp_cmd(
-                            "Network.getResponseBody",
-                            {"requestId": str(request_id)},
-                        )
-                        api_responses.append(api_response)
+                        try:
+                            api_response = driver.execute_cdp_cmd(
+                                "Network.getResponseBody",
+                                {"requestId": str(request_id)},
+                            )
+                            api_responses.append(api_response)
+                        except:
+                            logger.info("No response found")
 
-            all_post_data = []
-            for api_response in api_responses:
-                post_data = extract_post_info(api_response)
-                all_post_data.append(post_data)
+        all_post_data = []
+        for api_response in api_responses:
+            post_data = extract_post_info(api_response)
+            all_post_data.append(post_data)
 
-            all_data_to_upload = []
-            for all_post in all_post_data:
-                for post in all_post:
-                    post['search_query'] = search_text
-                    all_data_to_upload.append(post)
+        all_data_to_upload = []
+        for all_post in all_post_data:
+            for post in all_post:
+                post['search_query'] = search_text
+                all_data_to_upload.append(post)
             
-            upload_post(all_data_to_upload)
-            logger.info(f"Uploaded {len(all_data_to_upload)} posts to the database for query: {search_text}")
+        upload_post(all_data_to_upload)
+        logger.info(f"Uploaded {len(all_data_to_upload)} posts to the database for query: {search_text}")
 
     except Exception as e:
         logger.exception(f"An error occurred during search: {e}")
@@ -166,7 +193,7 @@ if __name__ == '__main__':
         
         if login(driver):
             logger.info("Login successful, starting search.")
-            search(driver, "places to visit", 1000)
+            search(driver, "places to visit", 500)
         else:
             logger.error("Login failed. Exiting.")
 
