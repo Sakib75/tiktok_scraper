@@ -1,0 +1,136 @@
+2024-10-05 13:16:38,374 - INFO - Starting TikTok scraping script
+2024-10-05 13:16:39,140 - INFO - Web driver created successfully
+2024-10-05 13:16:40,584 - INFO - Navigated to TikTok homepage.
+2024-10-05 13:16:40,849 - INFO - User already logged in.
+2024-10-05 13:16:40,850 - INFO - Logged in to TikTok
+2024-10-05 13:16:40,852 - INFO - Loaded 15 queries from queries.csv
+2024-10-05 13:16:40,853 - INFO - Searching for query: places to travel
+2024-10-05 13:17:00,615 - INFO - Completed search for: places to travel
+2024-10-05 13:17:00,616 - INFO - Sleeping for 24 seconds before next query
+2024-10-05 13:17:24,594 - INFO - Searching for query: places that don't feel real
+2024-10-05 13:17:44,117 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(54, 'Connection reset by peer')': /session/3d3ea589133c69238c6079ce0fb54a6d
+2024-10-05 13:17:44,121 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107b3c350>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/3d3ea589133c69238c6079ce0fb54a6d
+2024-10-05 13:17:44,123 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107b3c0b0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/3d3ea589133c69238c6079ce0fb54a6d
+2024-10-05 13:17:44,137 - INFO - Driver closed successfully
+2024-10-05 13:18:32,558 - INFO - Starting TikTok scraping script
+2024-10-05 13:18:33,261 - INFO - Web driver created successfully
+2024-10-05 13:18:34,472 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x106ee72c0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/55c607e8719f01b9231902631475cad9
+2024-10-05 13:18:34,473 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x106ee7fb0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/55c607e8719f01b9231902631475cad9
+2024-10-05 13:18:34,474 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x106f1c0b0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/55c607e8719f01b9231902631475cad9
+2024-10-05 13:18:34,493 - INFO - Driver closed successfully
+2024-10-05 13:20:10,482 - INFO - Starting TikTok scraping script
+2024-10-05 13:20:11,184 - INFO - Web driver created successfully
+2024-10-05 13:20:12,504 - INFO - Navigated to TikTok homepage.
+2024-10-05 13:20:15,836 - INFO - User already logged in.
+2024-10-05 13:20:15,836 - INFO - Logged in to TikTok
+2024-10-05 13:20:15,841 - INFO - Loaded 15 queries from queries.csv
+2024-10-05 13:20:15,842 - INFO - Searching for query: travel hacks
+2024-10-05 13:20:15,842 - INFO - Starting search for query: travel hacks
+2024-10-05 13:20:16,204 - INFO - Clicked search button for query: travel hacks
+2024-10-05 13:20:19,280 - INFO - Scrolled to position 743
+2024-10-05 13:20:23,289 - INFO - Scrolled to position 1427
+2024-10-05 13:20:27,300 - INFO - Scrolled to position 1971
+2024-10-05 13:20:32,311 - INFO - Scrolled to position 2640
+2024-10-05 13:20:36,327 - INFO - Scrolled to position 3343
+2024-10-05 13:20:36,440 - INFO - Captured request ID: 14174.593
+2024-10-05 13:20:36,446 - INFO - Captured request ID: 14174.687
+2024-10-05 13:20:36,451 - INFO - Captured request ID: 14174.754
+2024-10-05 13:20:36,455 - INFO - Captured request ID: 14174.825
+2024-10-05 13:20:36,461 - ERROR - An error occurred during search: list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "/Users/sakib/Documents/tiktok_scraper/framework/tiktok_bot.py", line 144, in search
+    all_post_data[i]["search_query"] = search_text
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+2024-10-05 13:20:36,466 - INFO - Completed search for: travel hacks
+2024-10-05 13:20:36,466 - INFO - Sleeping for 24 seconds before next query
+2024-10-05 13:21:00,471 - INFO - Searching for query: #traveltok
+2024-10-05 13:21:00,472 - INFO - Starting search for query: #traveltok
+2024-10-05 13:21:00,725 - INFO - Clicked search button for query: #traveltok
+2024-10-05 13:21:06,731 - INFO - Scrolled to position 595
+2024-10-05 13:21:11,744 - INFO - Scrolled to position 1183
+2024-10-05 13:21:15,758 - INFO - Scrolled to position 1793
+2024-10-05 13:21:20,783 - INFO - Scrolled to position 2293
+2024-10-05 13:21:24,797 - INFO - Scrolled to position 2979
+2024-10-05 13:21:28,811 - INFO - Scrolled to position 3740
+2024-10-05 13:21:28,871 - INFO - Captured request ID: 14174.879
+2024-10-05 13:21:28,877 - INFO - Captured request ID: 14174.938
+2024-10-05 13:21:28,883 - INFO - Captured request ID: 14174.1009
+2024-10-05 13:21:28,888 - INFO - Captured request ID: 14174.1076
+2024-10-05 13:21:28,896 - ERROR - An error occurred during search: list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "/Users/sakib/Documents/tiktok_scraper/framework/tiktok_bot.py", line 144, in search
+    all_post_data[i]["search_query"] = search_text
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+2024-10-05 13:21:28,897 - INFO - Completed search for: #traveltok
+2024-10-05 13:21:28,897 - INFO - Sleeping for 26 seconds before next query
+2024-10-05 13:21:54,902 - INFO - Searching for query: #wanderlust
+2024-10-05 13:21:54,902 - INFO - Starting search for query: #wanderlust
+2024-10-05 13:21:55,166 - INFO - Clicked search button for query: #wanderlust
+2024-10-05 13:22:00,176 - INFO - Scrolled to position 644
+2024-10-05 13:22:04,191 - INFO - Scrolled to position 1157
+2024-10-05 13:22:08,206 - INFO - Scrolled to position 1674
+2024-10-05 13:22:14,221 - INFO - Scrolled to position 2438
+2024-10-05 13:22:20,236 - INFO - Scrolled to position 3076
+2024-10-05 13:22:20,291 - INFO - Captured request ID: 14174.1125
+2024-10-05 13:22:20,297 - INFO - Captured request ID: 14174.1188
+2024-10-05 13:22:20,304 - INFO - Captured request ID: 14174.1249
+2024-10-05 13:22:20,311 - ERROR - An error occurred during search: list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "/Users/sakib/Documents/tiktok_scraper/framework/tiktok_bot.py", line 144, in search
+    all_post_data[i]["search_query"] = search_text
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+2024-10-05 13:22:20,312 - INFO - Completed search for: #wanderlust
+2024-10-05 13:22:20,312 - INFO - Sleeping for 21 seconds before next query
+2024-10-05 13:23:35,624 - INFO - Searching for query: #backpackingadventures
+2024-10-05 13:23:35,626 - INFO - Starting search for query: #backpackingadventures
+2024-10-05 13:23:35,630 - ERROR - Search box not found.
+2024-10-05 13:23:35,630 - INFO - Completed search for: #backpackingadventures
+2024-10-05 13:23:35,630 - INFO - Sleeping for 30 seconds before next query
+2024-10-05 13:25:52,227 - INFO - Searching for query: #luxurytravel
+2024-10-05 13:25:52,228 - INFO - Starting search for query: #luxurytravel
+2024-10-05 13:25:52,232 - ERROR - Search box not found.
+2024-10-05 13:25:52,232 - INFO - Completed search for: #luxurytravel
+2024-10-05 13:25:52,232 - INFO - Sleeping for 29 seconds before next query
+2024-10-05 13:26:15,038 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(54, 'Connection reset by peer')': /session/ab88ce364faf6680b621f2a3b53acab3
+2024-10-05 13:26:15,038 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x103a371a0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/ab88ce364faf6680b621f2a3b53acab3
+2024-10-05 13:26:15,039 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x104ffd100>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/ab88ce364faf6680b621f2a3b53acab3
+2024-10-05 13:26:15,046 - INFO - Driver closed successfully
+2024-10-05 13:27:22,517 - INFO - Starting TikTok scraping script
+2024-10-05 13:27:23,390 - INFO - Web driver created successfully
+2024-10-05 13:27:24,596 - INFO - Navigated to TikTok homepage.
+2024-10-05 13:27:24,886 - INFO - User already logged in.
+2024-10-05 13:27:24,887 - INFO - Logged in to TikTok
+2024-10-05 13:27:24,906 - INFO - Loaded 15 queries from queries.csv
+2024-10-05 13:27:24,907 - INFO - Searching for query: travel hacks
+2024-10-05 13:27:24,907 - INFO - Starting search for query: travel hacks
+2024-10-05 13:27:25,401 - INFO - Clicked search button for query: travel hacks
+2024-10-05 13:27:28,474 - INFO - Scrolled to position 587
+2024-10-05 13:27:31,482 - INFO - Scrolled to position 1327
+2024-10-05 13:27:35,491 - INFO - Scrolled to position 2050
+2024-10-05 13:27:41,500 - INFO - Scrolled to position 2670
+2024-10-05 13:27:44,509 - INFO - Scrolled to position 3397
+2024-10-05 13:27:48,100 - INFO - Captured request ID: 15126.720
+2024-10-05 13:27:48,110 - INFO - Captured request ID: 15126.825
+2024-10-05 13:27:48,118 - INFO - Captured request ID: 15126.905
+2024-10-05 13:27:48,127 - INFO - Captured request ID: 15126.986
+2024-10-05 13:30:09,735 - INFO - Uploaded 4 posts to the database for query: travel hacks
+2024-10-05 13:33:19,809 - INFO - Starting TikTok scraping script
+2024-10-05 13:33:22,067 - INFO - Web driver created successfully
+2024-10-05 13:33:24,126 - INFO - Navigated to TikTok homepage.
+2024-10-05 13:33:24,136 - INFO - User already logged in.
+2024-10-05 13:33:24,136 - INFO - Logged in to TikTok
+2024-10-05 13:33:24,157 - INFO - Loaded 15 queries from queries.csv
+2024-10-05 13:33:24,159 - INFO - Searching for query: #solotravel
+2024-10-05 13:33:24,159 - INFO - Starting search for query: #solotravel
+2024-10-05 13:33:26,476 - INFO - Navigated to hashtag page: #solotravel
+2024-10-05 13:33:30,490 - INFO - Scrolled to position 676
+2024-10-05 13:33:36,498 - INFO - Scrolled to position 1289
+2024-10-05 13:33:39,503 - INFO - Scrolled to position 1836
+2024-10-05 13:33:43,525 - INFO - Scrolled to position 2480
+2024-10-05 13:33:49,529 - INFO - Scrolled to position 3109
+2024-10-05 13:33:49,777 - INFO - Uploaded 0 posts to the database for query: #solotravel
+2024-10-05 13:33:49,782 - INFO - Completed search for: #solotravel
+2024-10-05 13:33:49,782 - INFO - Sleeping for 24 seconds before next query

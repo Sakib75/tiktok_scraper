@@ -22,8 +22,6 @@ def create_database_and_table():
     conn.commit()
     conn.close()
 
-    print("Database and table created successfully.")
-
 
 
 def upload_to_database(video_data):
@@ -33,26 +31,36 @@ def upload_to_database(video_data):
                 (video_data['search_query'], video_data['author_username'], video_data['video_url'], video_data['description']))
     con.commit()
     con.close()
-    print('Uploaded')
-
 def upload_post(posts):
     for post in posts:  
         upload_to_database(post)
 
-sample_data = [{
-    "search_query":"a",
-    "author_username":"b",
-    "video_url":"c",
-    "description":"d"
-},
-{
-    "search_query":"a",
-    "author_username":"b",
-    "video_url":"c",
-    "description":"d"
-},
-]
+import sqlite3
 
-create_database_and_table()
-upload_post(sample_data)
+def fetch_all_post_data():
+    conn = sqlite3.connect("tiktok.db")
+    cursor = conn.cursor()
+    
+    try:
+        # Execute a SELECT query to fetch all rows
+        cursor.execute("SELECT * FROM post_data")
+        
+        # Fetch all rows
+        rows = cursor.fetchall()
+        
+        # Get column names
+        column_names = [description[0] for description in cursor.description]
+        
+        result = []
+        for row in rows:
+            result.append(dict(zip(column_names, row)))
+        
+        return result
+    
+    except sqlite3.Error as e:
+        print(f"An error occurred: {e}")
+        return None
+    
+    finally:
+        pass
 

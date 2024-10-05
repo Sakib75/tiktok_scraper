@@ -12,3 +12,90 @@
 2024-10-05 11:42:48,258 - INFO - User already logged in.
 2024-10-05 11:45:15,783 - INFO - Navigated to TikTok homepage.
 2024-10-05 11:45:15,796 - INFO - User already logged in.
+2024-10-05 12:32:15,661 - INFO - Navigated to TikTok homepage.
+2024-10-05 12:32:19,033 - INFO - User already logged in.
+2024-10-05 12:36:28,867 - INFO - Navigated to TikTok homepage.
+2024-10-05 12:36:28,886 - INFO - User already logged in.
+2024-10-05 12:59:18,460 - INFO - Navigated to TikTok homepage.
+2024-10-05 12:59:19,121 - INFO - User already logged in.
+2024-10-05 13:07:50,145 - INFO - Navigated to TikTok homepage.
+2024-10-05 13:07:50,174 - INFO - User already logged in.
+2024-10-05 13:09:13,810 - INFO - Navigated to TikTok homepage.
+2024-10-05 13:09:13,847 - INFO - User already logged in.
+2024-10-05 13:13:24,026 - INFO - Starting TikTok scraping script
+2024-10-05 13:13:24,770 - INFO - Web driver created successfully
+2024-10-05 13:13:28,151 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1045eeed0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/b997040b59ab9dd453fe789bc2b87177
+2024-10-05 13:13:28,151 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1045efb60>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/b997040b59ab9dd453fe789bc2b87177
+2024-10-05 13:13:28,152 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1045efce0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/b997040b59ab9dd453fe789bc2b87177
+2024-10-05 13:13:28,161 - INFO - Driver closed successfully
+2024-10-05 13:14:12,394 - INFO - Starting TikTok scraping script
+2024-10-05 13:14:13,129 - INFO - Web driver created successfully
+2024-10-05 13:14:14,005 - INFO - Navigated to TikTok homepage.
+2024-10-05 13:14:17,149 - INFO - User already logged in.
+2024-10-05 13:14:17,149 - INFO - Logged in to TikTok
+2024-10-05 13:14:17,155 - INFO - Loaded 15 queries from queries.csv
+2024-10-05 13:14:17,156 - INFO - Searching for query: places to travel
+2024-10-05 13:14:17,988 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(54, 'Connection reset by peer')': /session/8fd87708582efd5e40bef61bc468b1f1
+2024-10-05 13:14:17,990 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108913dd0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/8fd87708582efd5e40bef61bc468b1f1
+2024-10-05 13:14:17,991 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108913e00>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/8fd87708582efd5e40bef61bc468b1f1
+2024-10-05 13:14:17,999 - INFO - Driver closed successfully
+2024-10-05 13:15:41,735 - INFO - Starting TikTok scraping script
+2024-10-05 13:15:42,432 - INFO - Web driver created successfully
+2024-10-05 13:15:43,733 - INFO - Navigated to TikTok homepage.
+2024-10-05 13:15:45,595 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1051b7da0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/32c206869137b62984f67647d21cd062/elements
+2024-10-05 13:15:45,596 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1051b7cb0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/32c206869137b62984f67647d21cd062/elements
+2024-10-05 13:15:45,596 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1051b7d10>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/32c206869137b62984f67647d21cd062/elements
+2024-10-05 13:15:45,597 - ERROR - Top login button not found.
+2024-10-05 13:15:45,597 - INFO - Logged in to TikTok
+2024-10-05 13:15:45,599 - INFO - Loaded 15 queries from queries.csv
+2024-10-05 13:15:45,600 - INFO - Searching for query: places to travel
+2024-10-05 13:15:45,601 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1051f4200>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/32c206869137b62984f67647d21cd062/elements
+2024-10-05 13:15:45,601 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1051f42c0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/32c206869137b62984f67647d21cd062/elements
+2024-10-05 13:15:45,601 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1051f4500>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/32c206869137b62984f67647d21cd062/elements
+2024-10-05 13:15:45,602 - ERROR - An error occurred: list index out of range
+2024-10-05 13:15:45,602 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1051f4d40>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/32c206869137b62984f67647d21cd062
+2024-10-05 13:15:45,603 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1051f4ef0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/32c206869137b62984f67647d21cd062
+2024-10-05 13:15:45,603 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1051f50a0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/32c206869137b62984f67647d21cd062
+2024-10-05 13:15:45,609 - INFO - Driver closed successfully
+2024-10-05 13:15:53,050 - INFO - Starting TikTok scraping script
+2024-10-05 13:15:53,663 - INFO - Web driver created successfully
+2024-10-05 13:15:54,967 - INFO - Navigated to TikTok homepage.
+2024-10-05 13:15:57,994 - INFO - User already logged in.
+2024-10-05 13:15:57,994 - INFO - Logged in to TikTok
+2024-10-05 13:15:58,004 - INFO - Loaded 15 queries from queries.csv
+2024-10-05 13:15:58,005 - INFO - Searching for query: places to travel
+2024-10-05 13:16:07,234 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(54, 'Connection reset by peer')': /session/99908e9036d880187524a302c7ab979d
+2024-10-05 13:16:07,237 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1046a2420>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/99908e9036d880187524a302c7ab979d
+2024-10-05 13:16:07,239 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1046a3e60>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/99908e9036d880187524a302c7ab979d
+2024-10-05 13:16:07,254 - INFO - Driver closed successfully
+2024-10-05 13:16:38,374 - INFO - Starting TikTok scraping script
+2024-10-05 13:16:39,140 - INFO - Web driver created successfully
+2024-10-05 13:16:40,584 - INFO - Navigated to TikTok homepage.
+2024-10-05 13:16:40,849 - INFO - User already logged in.
+2024-10-05 13:16:40,850 - INFO - Logged in to TikTok
+2024-10-05 13:16:40,852 - INFO - Loaded 15 queries from queries.csv
+2024-10-05 13:16:40,853 - INFO - Searching for query: places to travel
+2024-10-05 13:17:00,615 - INFO - Completed search for: places to travel
+2024-10-05 13:17:00,616 - INFO - Sleeping for 24 seconds before next query
+2024-10-05 13:17:24,594 - INFO - Searching for query: places that don't feel real
+2024-10-05 13:17:44,117 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(54, 'Connection reset by peer')': /session/3d3ea589133c69238c6079ce0fb54a6d
+2024-10-05 13:17:44,121 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107b3c350>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/3d3ea589133c69238c6079ce0fb54a6d
+2024-10-05 13:17:44,123 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107b3c0b0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/3d3ea589133c69238c6079ce0fb54a6d
+2024-10-05 13:17:44,137 - INFO - Driver closed successfully
+2024-10-05 13:17:58,086 - INFO - Starting TikTok scraping script
+2024-10-05 13:17:58,827 - INFO - Web driver created successfully
+2024-10-05 13:18:00,113 - INFO - Navigated to TikTok homepage.
+2024-10-05 13:18:00,639 - INFO - User already logged in.
+2024-10-05 13:18:00,639 - INFO - Logged in to TikTok
+2024-10-05 13:18:00,641 - INFO - Loaded 15 queries from queries.csv
+2024-10-05 13:18:00,641 - INFO - Searching for query: places to travel
+2024-10-05 13:18:03,602 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(54, 'Connection reset by peer')': /session/60e713bab73e60177ddb7895076b5fcd
+2024-10-05 13:18:03,604 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1050b7890>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/60e713bab73e60177ddb7895076b5fcd
+2024-10-05 13:18:03,605 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1050b71d0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/60e713bab73e60177ddb7895076b5fcd
+2024-10-05 13:18:03,612 - INFO - Driver closed successfully
+2024-10-05 13:18:32,558 - INFO - Starting TikTok scraping script
+2024-10-05 13:18:33,261 - INFO - Web driver created successfully
+2024-10-05 13:18:34,472 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x106ee72c0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/55c607e8719f01b9231902631475cad9
+2024-10-05 13:18:34,473 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x106ee7fb0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/55c607e8719f01b9231902631475cad9
+2024-10-05 13:18:34,474 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x106f1c0b0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/55c607e8719f01b9231902631475cad9
+2024-10-05 13:18:34,493 - INFO - Driver closed successfully
