@@ -16,7 +16,7 @@ df = pd.DataFrame(all_data)
 unique_usernames = df['author_username'].unique()
 
 all_username_info = []
-for username in unique_usernames[0:2]:
+for username in unique_usernames:
     print(f"Username: {username}")
     driver.get(f"https://www.tiktok.com/@{username}")
 
