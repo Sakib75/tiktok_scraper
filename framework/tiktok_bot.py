@@ -2,6 +2,12 @@ import logging
 from selenium.webdriver import Chrome
 from driver_funcs import create_driver, get_els
 import sys
+import json
+from extract_info import extract_post_info
+
+def process_browser_log_entry(entry):
+    response = json.loads(entry["message"])["message"]
+    return response
 
 # Configure logging
 logging.basicConfig(
@@ -11,8 +17,8 @@ logging.basicConfig(
     level=logging.INFO  # Log level
 )
 
-def login():
-    driver = create_driver()
+def login(driver):
+    
     driver.get("https://www.tiktok.com/")
     logging.info("Navigated to TikTok homepage.")
 
@@ -81,8 +87,35 @@ def login():
         sys.exit()
 
 def search(driver, search_text):
-    
+    search_box = get_els(driver,"//input[@*='Search']")
+    search_box[0].send_keys(search_text)
+
+    search_btn = get_els(driver,"//*[@*='search-box-button']")
+    search_btn[0].click()
+
+    browser_log = driver.get_log("performance")
+
+    events = [process_browser_log_entry(entry) for entry in browser_log]
+    api_responses = []
+
+    for event in events:
+        if "response" in event["params"]:
+            if (
+                "https://www.tiktok.com/api/search/general/full/?WebIdLastTime" in event.get("params",{}).get("response",{}).get("url","")
+            ):
+                request_id = event["params"]["requestId"]
+                print(request_id)
+                api_response = driver.execute_cdp_cmd(
+                                    "Network.getResponseBody",
+                                    {"requestId": str(request_id)},)
+                api_responses.append(api_response)
+
+    for api_response in api_responses:
+        data = extract_post_info(api_response)
+
 if __name__ == '__main__':
-    login()
+    driver = create_driver()
+    login(driver)
+    search(driver,"beautiful location")
 
     
