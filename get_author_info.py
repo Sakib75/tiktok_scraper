@@ -38,4 +38,3 @@ for username in unique_usernames:
     sleep(randint(3,6))
 
 pd.DataFrame(all_username_info).to_csv("username_info.csv", index=False)
-    

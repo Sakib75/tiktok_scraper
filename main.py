@@ -10,7 +10,7 @@ from framework.logging_config import logger
 
 
 if __name__ == "__main__":
-    scroll_total = 3000
+    scroll_total = 30000
     logger.info("Starting TikTok scraping script")
     
     try:
@@ -23,7 +23,10 @@ if __name__ == "__main__":
         input_df = pd.read_csv('queries.csv')
         logger.info(f"Loaded {len(input_df)} queries from queries.csv")
         
-        for i in range(10, len(input_df)):
+        for i in range(0, len(input_df)):
+            query_type = input_df.loc[i, 'Query Type']
+            if query_type=='Keyword':
+                continue
             search_query = input_df.loc[i, 'Query']
             logger.info(f"Searching for query: {search_query}")
             
@@ -33,6 +36,7 @@ if __name__ == "__main__":
             sleep_time = randint(20, 30)
             logger.info(f"Sleeping for {sleep_time} seconds before next query")
             sleep(sleep_time)
+            break
     
     except Exception as e:
         logger.error(f"An error occurred: {e}")

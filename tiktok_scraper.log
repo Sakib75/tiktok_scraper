@@ -620,3 +620,323 @@ Stacktrace:
 2024-10-05 14:29:43,032 - INFO - Uploaded 63 posts to the database for query: #solotravel
 2024-10-05 14:29:43,033 - INFO - Completed search for: #solotravel
 2024-10-05 14:29:43,034 - INFO - Sleeping for 29 seconds before next query
+2024-10-05 16:07:22,596 - INFO - Starting TikTok scraping script
+2024-10-05 16:07:23,441 - INFO - Web driver created successfully
+2024-10-05 16:07:25,460 - INFO - Navigated to TikTok homepage.
+2024-10-05 16:07:25,462 - ERROR - Top login button not found.
+2024-10-05 16:07:25,462 - INFO - Logged in to TikTok
+2024-10-05 16:07:25,476 - INFO - Loaded 15 queries from queries.csv
+2024-10-05 16:07:25,487 - INFO - Searching for query: #solotravel
+2024-10-05 16:07:25,493 - INFO - Starting search for query: #solotravel
+2024-10-05 16:07:25,501 - ERROR - An error occurred during search: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+0   chromedriver                        0x0000000102ec8248 cxxbridge1$str$ptr + 1907280
+1   chromedriver                        0x0000000102ec0730 cxxbridge1$str$ptr + 1875768
+2   chromedriver                        0x0000000102ad4260 cxxbridge1$string$len + 89488
+3   chromedriver                        0x0000000102aaf728 core::str::slice_error_fail::hbaf5d05fe3921cd2 + 3776
+4   chromedriver                        0x0000000102b3ee8c cxxbridge1$string$len + 526780
+5   chromedriver                        0x0000000102b52218 cxxbridge1$string$len + 605512
+6   chromedriver                        0x0000000102b0d12c cxxbridge1$string$len + 322652
+7   chromedriver                        0x0000000102b0dd7c cxxbridge1$string$len + 325804
+8   chromedriver                        0x0000000102e904d8 cxxbridge1$str$ptr + 1678560
+9   chromedriver                        0x0000000102e94e40 cxxbridge1$str$ptr + 1697352
+10  chromedriver                        0x0000000102e755ec cxxbridge1$str$ptr + 1568244
+11  chromedriver                        0x0000000102e95710 cxxbridge1$str$ptr + 1699608
+12  chromedriver                        0x0000000102e66b90 cxxbridge1$str$ptr + 1508248
+13  chromedriver                        0x0000000102eb1828 cxxbridge1$str$ptr + 1814576
+14  chromedriver                        0x0000000102eb1980 cxxbridge1$str$ptr + 1814920
+15  chromedriver                        0x0000000102ec03d0 cxxbridge1$str$ptr + 1874904
+16  libsystem_pthread.dylib             0x000000019d679f94 _pthread_start + 136
+17  libsystem_pthread.dylib             0x000000019d674d34 thread_start + 8
+Traceback (most recent call last):
+  File "/Users/sakib/Documents/tiktok_scraper/framework/tiktok_bot.py", line 102, in search
+    random_scrolling(driver, 400, 100,200)
+  File "/Users/sakib/Documents/tiktok_scraper/framework/driver_funcs.py", line 64, in random_scrolling
+    driver.execute_script(f"window.scrollTo(0, {current_scroll})")
+  File "/Users/sakib/Documents/tiktok_scraper/venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 414, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakib/Documents/tiktok_scraper/venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "/Users/sakib/Documents/tiktok_scraper/venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+0   chromedriver                        0x0000000102ec8248 cxxbridge1$str$ptr + 1907280
+1   chromedriver                        0x0000000102ec0730 cxxbridge1$str$ptr + 1875768
+2   chromedriver                        0x0000000102ad4260 cxxbridge1$string$len + 89488
+3   chromedriver                        0x0000000102aaf728 core::str::slice_error_fail::hbaf5d05fe3921cd2 + 3776
+4   chromedriver                        0x0000000102b3ee8c cxxbridge1$string$len + 526780
+5   chromedriver                        0x0000000102b52218 cxxbridge1$string$len + 605512
+6   chromedriver                        0x0000000102b0d12c cxxbridge1$string$len + 322652
+7   chromedriver                        0x0000000102b0dd7c cxxbridge1$string$len + 325804
+8   chromedriver                        0x0000000102e904d8 cxxbridge1$str$ptr + 1678560
+9   chromedriver                        0x0000000102e94e40 cxxbridge1$str$ptr + 1697352
+10  chromedriver                        0x0000000102e755ec cxxbridge1$str$ptr + 1568244
+11  chromedriver                        0x0000000102e95710 cxxbridge1$str$ptr + 1699608
+12  chromedriver                        0x0000000102e66b90 cxxbridge1$str$ptr + 1508248
+13  chromedriver                        0x0000000102eb1828 cxxbridge1$str$ptr + 1814576
+14  chromedriver                        0x0000000102eb1980 cxxbridge1$str$ptr + 1814920
+15  chromedriver                        0x0000000102ec03d0 cxxbridge1$str$ptr + 1874904
+16  libsystem_pthread.dylib             0x000000019d679f94 _pthread_start + 136
+17  libsystem_pthread.dylib             0x000000019d674d34 thread_start + 8
+
+2024-10-05 16:07:25,505 - INFO - Completed search for: #solotravel
+2024-10-05 16:07:25,505 - INFO - Sleeping for 24 seconds before next query
+2024-10-05 16:07:36,433 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(54, 'Connection reset by peer')': /session/8c5807f9d1cfe5af32c83b7c30c3f133
+2024-10-05 16:07:36,435 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10534f620>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/8c5807f9d1cfe5af32c83b7c30c3f133
+2024-10-05 16:07:36,437 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x105380470>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/8c5807f9d1cfe5af32c83b7c30c3f133
+2024-10-05 16:07:36,463 - INFO - Driver closed successfully
+2024-10-05 16:07:37,976 - INFO - Starting TikTok scraping script
+2024-10-05 16:07:38,600 - INFO - Web driver created successfully
+2024-10-05 16:07:47,283 - INFO - Navigated to TikTok homepage.
+2024-10-05 16:07:47,299 - INFO - User already logged in.
+2024-10-05 16:07:47,300 - INFO - Logged in to TikTok
+2024-10-05 16:07:47,303 - INFO - Loaded 15 queries from queries.csv
+2024-10-05 16:07:47,303 - INFO - Searching for query: #traveltok
+2024-10-05 16:07:47,303 - INFO - Starting search for query: #traveltok
+2024-10-05 16:07:54,411 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(54, 'Connection reset by peer')': /session/dbfe303ea360ddb1568869c461b85d2a
+2024-10-05 16:07:54,414 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10522f950>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/dbfe303ea360ddb1568869c461b85d2a
+2024-10-05 16:07:54,416 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10867bef0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/dbfe303ea360ddb1568869c461b85d2a
+2024-10-05 16:07:54,440 - INFO - Driver closed successfully
+2024-10-05 16:07:56,675 - INFO - Starting TikTok scraping script
+2024-10-05 16:07:57,348 - INFO - Web driver created successfully
+2024-10-05 16:08:05,095 - INFO - Navigated to TikTok homepage.
+2024-10-05 16:08:05,784 - INFO - User already logged in.
+2024-10-05 16:08:05,784 - INFO - Logged in to TikTok
+2024-10-05 16:08:05,788 - INFO - Loaded 15 queries from queries.csv
+2024-10-05 16:08:05,789 - INFO - Searching for query: #traveltok
+2024-10-05 16:08:05,789 - INFO - Starting search for query: #traveltok
+2024-10-05 16:08:21,254 - INFO - Navigated to hashtag page: #traveltok
+2024-10-05 16:08:26,457 - INFO - Scrolled to position 561
+2024-10-05 16:08:30,466 - INFO - Scrolled to position 1118
+2024-10-05 16:08:34,479 - INFO - Scrolled to position 1885
+2024-10-05 16:08:37,494 - INFO - Scrolled to position 2592
+2024-10-05 16:08:42,512 - INFO - Scrolled to position 3299
+2024-10-05 16:08:46,531 - INFO - Scrolled to position 4094
+2024-10-05 16:08:51,555 - INFO - Scrolled to position 4793
+2024-10-05 16:08:56,573 - INFO - Scrolled to position 5503
+2024-10-05 16:09:01,617 - INFO - Scrolled to position 6239
+2024-10-05 16:09:05,631 - INFO - Scrolled to position 6900
+2024-10-05 16:09:10,646 - INFO - Scrolled to position 7523
+2024-10-05 16:09:14,674 - INFO - Scrolled to position 8159
+2024-10-05 16:09:20,696 - INFO - Scrolled to position 8822
+2024-10-05 16:09:23,711 - INFO - Scrolled to position 9403
+2024-10-05 16:09:29,726 - INFO - Scrolled to position 10103
+2024-10-05 16:09:34,741 - INFO - Scrolled to position 10790
+2024-10-05 16:09:38,755 - INFO - Scrolled to position 11400
+2024-10-05 16:09:43,770 - INFO - Scrolled to position 12177
+2024-10-05 16:09:46,781 - INFO - Scrolled to position 12956
+2024-10-05 16:09:50,796 - INFO - Scrolled to position 13620
+2024-10-05 16:09:54,810 - INFO - Scrolled to position 14304
+2024-10-05 16:09:58,825 - INFO - Scrolled to position 15024
+2024-10-05 16:10:04,839 - INFO - Scrolled to position 15788
+2024-10-05 16:10:07,847 - INFO - Scrolled to position 16404
+2024-10-05 16:10:12,860 - INFO - Scrolled to position 17076
+2024-10-05 16:10:15,872 - INFO - Scrolled to position 17664
+2024-10-05 16:10:18,886 - INFO - Scrolled to position 18196
+2024-10-05 16:10:24,896 - INFO - Scrolled to position 18708
+2024-10-05 16:10:28,907 - INFO - Scrolled to position 19363
+2024-10-05 16:10:34,918 - INFO - Scrolled to position 20038
+2024-10-05 16:10:40,931 - INFO - Scrolled to position 20838
+2024-10-05 16:10:46,943 - INFO - Scrolled to position 21399
+2024-10-05 16:10:51,955 - INFO - Scrolled to position 22026
+2024-10-05 16:10:55,964 - INFO - Scrolled to position 22692
+2024-10-05 16:10:59,973 - INFO - Scrolled to position 23336
+2024-10-05 16:11:02,986 - INFO - Scrolled to position 24022
+2024-10-05 16:11:05,998 - INFO - Scrolled to position 24682
+2024-10-05 16:11:11,011 - INFO - Scrolled to position 25312
+2024-10-05 16:11:14,025 - INFO - Scrolled to position 26014
+2024-10-05 16:11:17,039 - INFO - Scrolled to position 26652
+2024-10-05 16:11:20,054 - INFO - Scrolled to position 27286
+2024-10-05 16:11:25,068 - INFO - Scrolled to position 28080
+2024-10-05 16:11:31,077 - INFO - Scrolled to position 28867
+2024-10-05 16:11:37,091 - INFO - Scrolled to position 29643
+2024-10-05 16:11:40,104 - INFO - Scrolled to position 30299
+2024-10-05 16:11:40,351 - INFO - Captured request ID: 38200.796
+2024-10-05 16:11:40,354 - INFO - No response found
+2024-10-05 16:11:40,354 - INFO - Captured request ID: 38200.923
+2024-10-05 16:11:40,380 - INFO - Captured request ID: 38200.1116
+2024-10-05 16:11:40,391 - INFO - Captured request ID: 38200.1184
+2024-10-05 16:11:40,403 - INFO - Captured request ID: 38200.1250
+2024-10-05 16:11:40,416 - INFO - Captured request ID: 38200.1315
+2024-10-05 16:11:40,423 - INFO - Captured request ID: 38200.1355
+2024-10-05 16:11:40,433 - INFO - Captured request ID: 38200.1408
+2024-10-05 16:11:40,441 - INFO - Captured request ID: 38200.1443
+2024-10-05 16:11:40,445 - INFO - Captured request ID: 38200.1474
+2024-10-05 16:11:40,537 - INFO - Uploaded 95 posts to the database for query: #traveltok
+2024-10-05 16:11:40,544 - INFO - Completed search for: #traveltok
+2024-10-05 16:11:40,545 - INFO - Sleeping for 29 seconds before next query
+2024-10-05 16:12:09,694 - INFO - Driver closed successfully
+2024-10-05 16:12:13,784 - INFO - Starting TikTok scraping script
+2024-10-05 16:12:14,593 - INFO - Web driver created successfully
+2024-10-05 16:12:16,334 - INFO - Navigated to TikTok homepage.
+2024-10-05 16:12:16,348 - INFO - User already logged in.
+2024-10-05 16:12:16,348 - INFO - Logged in to TikTok
+2024-10-05 16:12:16,353 - INFO - Loaded 14 queries from queries.csv
+2024-10-05 16:12:16,355 - INFO - Searching for query: #wanderlust
+2024-10-05 16:12:16,356 - INFO - Starting search for query: #wanderlust
+2024-10-05 16:12:33,787 - INFO - Navigated to hashtag page: #wanderlust
+2024-10-05 16:12:40,002 - INFO - Scrolled to position 612
+2024-10-05 16:12:44,035 - INFO - Scrolled to position 1338
+2024-10-05 16:12:48,067 - INFO - Scrolled to position 1912
+2024-10-05 16:12:53,116 - INFO - Scrolled to position 2577
+2024-10-05 16:12:57,148 - INFO - Scrolled to position 3264
+2024-10-05 16:13:02,179 - INFO - Scrolled to position 3985
+2024-10-05 16:13:08,193 - INFO - Scrolled to position 4678
+2024-10-05 16:13:13,203 - INFO - Scrolled to position 5422
+2024-10-05 16:13:17,218 - INFO - Scrolled to position 6088
+2024-10-05 16:13:23,232 - INFO - Scrolled to position 6656
+2024-10-05 16:13:29,247 - INFO - Scrolled to position 7432
+2024-10-05 16:13:34,262 - INFO - Scrolled to position 8200
+2024-10-05 16:13:38,275 - INFO - Scrolled to position 8955
+2024-10-05 16:13:43,288 - INFO - Scrolled to position 9721
+2024-10-05 16:13:47,297 - INFO - Scrolled to position 10266
+2024-10-05 16:13:52,311 - INFO - Scrolled to position 11020
+2024-10-05 16:13:58,325 - INFO - Scrolled to position 11526
+2024-10-05 16:14:01,341 - INFO - Scrolled to position 12144
+2024-10-05 16:14:06,354 - INFO - Scrolled to position 12850
+2024-10-05 16:14:09,367 - INFO - Scrolled to position 13413
+2024-10-05 16:14:13,381 - INFO - Scrolled to position 13936
+2024-10-05 16:14:19,395 - INFO - Scrolled to position 14634
+2024-10-05 16:14:22,408 - INFO - Scrolled to position 15336
+2024-10-05 16:14:27,422 - INFO - Scrolled to position 16092
+2024-10-05 16:14:31,437 - INFO - Scrolled to position 16801
+2024-10-05 16:14:37,451 - INFO - Scrolled to position 17538
+2024-10-05 16:14:43,466 - INFO - Scrolled to position 18128
+2024-10-05 16:14:46,480 - INFO - Scrolled to position 18716
+2024-10-05 16:14:49,494 - INFO - Scrolled to position 19385
+2024-10-05 16:14:52,503 - INFO - Scrolled to position 19972
+2024-10-05 16:14:57,519 - INFO - Scrolled to position 20490
+2024-10-05 16:15:01,534 - INFO - Scrolled to position 21129
+2024-10-05 16:15:07,548 - INFO - Scrolled to position 21677
+2024-10-05 16:15:12,562 - INFO - Scrolled to position 22417
+2024-10-05 16:15:12,567 - ERROR - An error occurred during search: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+0   chromedriver                        0x0000000105098248 cxxbridge1$str$ptr + 1907280
+1   chromedriver                        0x0000000105090730 cxxbridge1$str$ptr + 1875768
+2   chromedriver                        0x0000000104ca4260 cxxbridge1$string$len + 89488
+3   chromedriver                        0x0000000104c8e0fc core::str::slice_error_fail::hbaf5d05fe3921cd2 + 63636
+4   chromedriver                        0x0000000104c8e03c core::str::slice_error_fail::hbaf5d05fe3921cd2 + 63444
+5   chromedriver                        0x0000000104d22234 cxxbridge1$string$len + 605540
+6   chromedriver                        0x0000000104cdd12c cxxbridge1$string$len + 322652
+7   chromedriver                        0x0000000104cddd7c cxxbridge1$string$len + 325804
+8   chromedriver                        0x00000001050604d8 cxxbridge1$str$ptr + 1678560
+9   chromedriver                        0x0000000105064e40 cxxbridge1$str$ptr + 1697352
+10  chromedriver                        0x00000001050455ec cxxbridge1$str$ptr + 1568244
+11  chromedriver                        0x0000000105065710 cxxbridge1$str$ptr + 1699608
+12  chromedriver                        0x0000000105036b90 cxxbridge1$str$ptr + 1508248
+13  chromedriver                        0x0000000105081828 cxxbridge1$str$ptr + 1814576
+14  chromedriver                        0x0000000105081980 cxxbridge1$str$ptr + 1814920
+15  chromedriver                        0x00000001050903d0 cxxbridge1$str$ptr + 1874904
+16  libsystem_pthread.dylib             0x000000019d679f94 _pthread_start + 136
+17  libsystem_pthread.dylib             0x000000019d674d34 thread_start + 8
+Traceback (most recent call last):
+  File "/Users/sakib/Documents/tiktok_scraper/framework/tiktok_bot.py", line 122, in search
+    driver.execute_script(f"window.scrollTo(0, {current_scroll})")
+  File "/Users/sakib/Documents/tiktok_scraper/venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 414, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakib/Documents/tiktok_scraper/venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "/Users/sakib/Documents/tiktok_scraper/venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+0   chromedriver                        0x0000000105098248 cxxbridge1$str$ptr + 1907280
+1   chromedriver                        0x0000000105090730 cxxbridge1$str$ptr + 1875768
+2   chromedriver                        0x0000000104ca4260 cxxbridge1$string$len + 89488
+3   chromedriver                        0x0000000104c8e0fc core::str::slice_error_fail::hbaf5d05fe3921cd2 + 63636
+4   chromedriver                        0x0000000104c8e03c core::str::slice_error_fail::hbaf5d05fe3921cd2 + 63444
+5   chromedriver                        0x0000000104d22234 cxxbridge1$string$len + 605540
+6   chromedriver                        0x0000000104cdd12c cxxbridge1$string$len + 322652
+7   chromedriver                        0x0000000104cddd7c cxxbridge1$string$len + 325804
+8   chromedriver                        0x00000001050604d8 cxxbridge1$str$ptr + 1678560
+9   chromedriver                        0x0000000105064e40 cxxbridge1$str$ptr + 1697352
+10  chromedriver                        0x00000001050455ec cxxbridge1$str$ptr + 1568244
+11  chromedriver                        0x0000000105065710 cxxbridge1$str$ptr + 1699608
+12  chromedriver                        0x0000000105036b90 cxxbridge1$str$ptr + 1508248
+13  chromedriver                        0x0000000105081828 cxxbridge1$str$ptr + 1814576
+14  chromedriver                        0x0000000105081980 cxxbridge1$str$ptr + 1814920
+15  chromedriver                        0x00000001050903d0 cxxbridge1$str$ptr + 1874904
+16  libsystem_pthread.dylib             0x000000019d679f94 _pthread_start + 136
+17  libsystem_pthread.dylib             0x000000019d674d34 thread_start + 8
+
+2024-10-05 16:15:12,574 - INFO - Completed search for: #wanderlust
+2024-10-05 16:15:12,574 - INFO - Sleeping for 27 seconds before next query
+2024-10-05 16:15:59,004 - INFO - Driver closed successfully
+2024-10-05 16:16:49,071 - INFO - Starting TikTok scraping script
+2024-10-05 16:16:50,310 - INFO - Web driver created successfully
+2024-10-05 16:16:54,434 - INFO - Navigated to TikTok homepage.
+2024-10-05 16:16:56,975 - INFO - User already logged in.
+2024-10-05 16:16:56,975 - INFO - Logged in to TikTok
+2024-10-05 16:16:56,981 - INFO - Loaded 14 queries from queries.csv
+2024-10-05 16:16:56,982 - INFO - Searching for query: #wanderlust
+2024-10-05 16:16:56,982 - INFO - Starting search for query: #wanderlust
+2024-10-05 16:17:14,318 - INFO - Navigated to hashtag page: #wanderlust
+2024-10-05 16:17:19,335 - INFO - Scrolled to position 605
+2024-10-05 16:17:24,359 - INFO - Scrolled to position 1293
+2024-10-05 16:17:27,393 - INFO - Scrolled to position 1869
+2024-10-05 16:17:32,417 - INFO - Scrolled to position 2453
+2024-10-05 16:17:36,447 - INFO - Scrolled to position 3193
+2024-10-05 16:17:40,477 - INFO - Scrolled to position 3880
+2024-10-05 16:17:46,487 - INFO - Scrolled to position 4623
+2024-10-05 16:17:49,502 - INFO - Scrolled to position 5169
+2024-10-05 16:17:54,516 - INFO - Scrolled to position 5774
+2024-10-05 16:18:00,530 - INFO - Scrolled to position 6308
+2024-10-05 16:18:06,540 - INFO - Scrolled to position 6944
+2024-10-05 16:18:12,549 - INFO - Scrolled to position 7675
+2024-10-05 16:18:15,565 - INFO - Scrolled to position 8290
+2024-10-05 16:18:21,577 - INFO - Scrolled to position 9038
+2024-10-05 16:18:27,592 - INFO - Scrolled to position 9706
+2024-10-05 16:18:33,606 - INFO - Scrolled to position 10411
+2024-10-05 16:18:38,619 - INFO - Scrolled to position 10974
+2024-10-05 16:18:42,630 - INFO - Scrolled to position 11598
+2024-10-05 16:18:45,645 - INFO - Scrolled to position 12311
+2024-10-05 16:18:49,659 - INFO - Scrolled to position 13090
+2024-10-05 16:18:54,674 - INFO - Scrolled to position 13669
+2024-10-05 16:19:00,683 - INFO - Scrolled to position 14384
+2024-10-05 16:19:06,691 - INFO - Scrolled to position 14974
+2024-10-05 16:19:12,699 - INFO - Scrolled to position 15599
+2024-10-05 16:19:15,707 - INFO - Scrolled to position 16142
+2024-10-05 16:19:18,716 - INFO - Scrolled to position 16821
+2024-10-05 16:19:22,724 - INFO - Scrolled to position 17518
+2024-10-05 16:19:25,731 - INFO - Scrolled to position 18160
+2024-10-05 16:19:31,739 - INFO - Scrolled to position 18949
+2024-10-05 16:19:37,752 - INFO - Scrolled to position 19467
+2024-10-05 16:19:40,767 - INFO - Scrolled to position 20064
+2024-10-05 16:19:43,777 - INFO - Scrolled to position 20639
+2024-10-05 16:19:46,786 - INFO - Scrolled to position 21312
+2024-10-05 16:19:50,796 - INFO - Scrolled to position 21915
+2024-10-05 16:19:55,803 - INFO - Scrolled to position 22567
+2024-10-05 16:19:58,811 - INFO - Scrolled to position 23074
+2024-10-05 16:20:03,818 - INFO - Scrolled to position 23690
+2024-10-05 16:20:09,827 - INFO - Scrolled to position 24236
+2024-10-05 16:20:12,837 - INFO - Scrolled to position 24976
+2024-10-05 16:20:17,844 - INFO - Scrolled to position 25497
+2024-10-05 16:20:23,847 - INFO - Scrolled to position 26024
+2024-10-05 16:20:27,855 - INFO - Scrolled to position 26738
+2024-10-05 16:20:30,862 - INFO - Scrolled to position 27405
+2024-10-05 16:20:33,866 - INFO - Scrolled to position 28131
+2024-10-05 16:20:36,874 - INFO - Scrolled to position 28712
+2024-10-05 16:20:41,880 - INFO - Scrolled to position 29243
+2024-10-05 16:20:46,888 - INFO - Scrolled to position 29988
+2024-10-05 16:20:52,893 - INFO - Scrolled to position 30546
+2024-10-05 16:20:53,086 - INFO - Captured request ID: 40009.1165
+2024-10-05 16:20:53,121 - INFO - Captured request ID: 40009.1354
+2024-10-05 16:20:53,125 - INFO - Captured request ID: 40009.1394
+2024-10-05 16:20:53,135 - INFO - Captured request ID: 40009.1431
+2024-10-05 16:20:53,143 - INFO - Captured request ID: 40009.1472
+2024-10-05 16:20:53,158 - INFO - Captured request ID: 40009.1528
+2024-10-05 16:20:53,246 - INFO - Uploaded 58 posts to the database for query: #wanderlust
+2024-10-05 16:20:53,253 - INFO - Completed search for: #wanderlust
+2024-10-05 16:20:53,253 - INFO - Sleeping for 29 seconds before next query
+2024-10-05 16:21:22,455 - INFO - Driver closed successfully
